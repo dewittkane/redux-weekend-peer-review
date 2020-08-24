@@ -16,18 +16,18 @@ Practicing compassionate code reviews is important (you can learn more from this
 ## Base Required Features 
 
 - Multi-Part Form:  
-  - [ ] Able to add feedback
-    - [ ] Data collected on individual pages & components
-    - [ ] Click on next takes you to the next page in sequence
+  - [x ] Able to add feedback
+    - [x ] Data collected on individual pages & components
+    - [x ] Click on next takes you to the next page in sequence
     - [ ] Data saves in DB after *all* the parts are completed (not piecemeal)
-    - [ ] Thank you page takes you back to the first view
+    - [x ] Thank you page takes you back to the first view
     - [ ] Old Data is cleared on form completion
 
 - Client code:
-  - [ ]  Individual components for each form part
-  - [ ]  Redux setup complete
-    - [ ] Store linked to react with `<Provider>`
-    - [ ] Store setup with reducer(s) and logger middleware 
+  - [x ]  Individual components for each form part
+  - [ x]  Redux setup complete
+    - [x ] Store linked to react with `<Provider>`
+    - [x ] Store setup with reducer(s) and logger middleware 
   - [ ] Reducers & Actions Working
     - [ ] Actions are in SCREAMING_SNAKE_CASE and semantically named
     - [ ] Actions have a `type` key, and `payload` if sending data
@@ -88,40 +88,39 @@ First must be complete for score of _5 - Exceeds Expectations_
 ## Markdown
 
 ```
-Hey ___,
+Hey Emerson,
 
-General Feedback.
+Can tell you hit some hang ups this weekend, but everything you did accomplish seems solid. Would have loved to see it all come together ;D
 
 ---
 | Functional Requirements | Complete? |
 | --- | :---: |
-| Multi page form with client side routing and navigation (next button) | no |
+| Multi page form with client side routing and navigation (next button) | yes |
 | Data stored in Redux when navigating from page to page | no |
-| User is notified when trying to leave a blank score | no |
+| User is notified when trying to leave a blank score | yes |
 | Review Component displays scores and comments from current redux state | no |
 | Submit button sends data to the server via Axios | no |
-| Confirmaion Page displays after data is POSTed to the server | no |
+| Confirmation Page displays after data is POSTed to the server | kinda |
 | Button on Confirmation Page clears Redux and starts a new survey | no |
-| Views are broken down into components | no |
+| Views are broken down into components | yes |
 
 ---
 ### Notes:
 
-Notes on the above Functional Requirements.
+Unfortunately, I wasn't able to get the code running due to some PG/npm issues.  From what I could tell, the page navigation looked like it worked.  One suggestion - some of your routes were capitalized and others weren't.  I would standardize this.  The logic that's in place all seems solid.  I like that you were planning on using one reducer and storing it as an array of objects.
 
 ---
 | General Items | Complete? |
 | --- | :---: |
 | More than 15 git commits | no |
-| Commits are descriptive of the changes made or feature added | no |
+| Commits are descriptive of the changes made or feature added | yes |
 | Readme file updated | no |
-| Appropriate amount of code comments | no |
-| Code is consistently formatted | no |
+| Appropriate amount of code comments | yes |
+| Code is consistently formatted | yes |
 | Server code organized with router & module files | no |
 
 ---
 ### Notes:
 
-Notes on General Items
-
+Plenty of git commits for the amount done.  Comments are great and the commit messages are descriptive.  You also had a really good to do list set up that would have let you to success if you had had the time.
 ```
